@@ -18,7 +18,7 @@ class DefaultController extends Controller
 		$model = new FormData();
 
 
-		\Yii::$app->getSession()->setFlash('danger', 'Что-то пошло не так!');
+		\Yii::$app->getSession()->setFlash('error', 'Что-то пошло не так!');
 		\Yii::$app->getSession()->setFlash('success', 'Спасибо за ваше сообщение. Мы скоро свяжемся с вами.');
 
 		return $this->render('feed', ['model' => $model]);

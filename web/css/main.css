@@ -107,3 +107,21 @@ button.sky:hover{
     background: linear-gradient(top, rgba(155,205,255,1) 0%,rgba(134,192,250,1) 44%,rgba(110,176,242,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bcdff', endColorstr='#6eb0f2',GradientType=0 ); /* IE6-9 */
 }
+
+
+.alert{
+padding:30px 20px 30px 40px;
+margin:10px 0;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+line-height:120%;
+vertical-align: center;
+position:relative;
+top:0;
+left:0;
+clear:both;
+}
+
+.alert.error{border:1px solid red;background:pink;color:red;}
+.alert.success{border:1px solid green;background:lightgreen;color:green;}

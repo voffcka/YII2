@@ -10,6 +10,7 @@ use yii\web\View;
 	'enableAjaxValidation' => true,
 	'validationUrl' => Url::toRoute('default/validate'),
 	]); ?>
+<h1>Обратная связь</h1>	
 <div class='form-box'>	
 	<div id="mess"></div>
 
@@ -17,8 +18,7 @@ use yii\web\View;
 'options'=>['id'=>'','class'=>'']]) ?></div>
 	
 <div class='field-box'><?= $form->field($model, 'phone')->widget(\yii\widgets\MaskedInput::className(), [
-		//'mask' => '+7(999)-999-9999',
-	'mask' => "7(999)-999-9999",
+		'mask' => '+7(999)-999-9999',
 		'clientOptions'=>[
 		'removeMaskOnSubmit' => true,
 		]
@@ -45,10 +45,12 @@ use yii\web\View;
 					dataType: "json"						
 				})
 		.done(function(json) {
-			$("#mess").html(\'<div class="alert alert-success" role="alert">'.\Yii::$app->session->getFlash('success').'</div>\');
+			$("#mess").html(\'<div class="alert success">'.\Yii::$app->session->getFlash('success').'</div>\');
+			$("html, body").animate({ scrollTop: 0 }, "slow");
 		})
 		.fail(function(json) {
-			$("#mess").html(\'<div class="alert alert-danger" role="alert">'.\Yii::$app->session->getFlash('danger').'</div>\');
+			$("#mess").html(\'<div class="alert error">'.\Yii::$app->session->getFlash('danger').'</div>\');
+			$("html, body").animate({ scrollTop: 0 }, "slow");
 		});
 		return false; 
 	});
