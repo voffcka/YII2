@@ -10,7 +10,9 @@ FeedBack
 Создан в виде модуля
       modules/
       --feedbackamocrm/
+--      
       Конфигурационный файл
+--      
       config/params.php
     'urlAPI'=>'.amocrm.ru/private/api/', 
     'subAPI'=>'domian',
