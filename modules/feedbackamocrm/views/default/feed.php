@@ -17,7 +17,8 @@ use yii\web\View;
 'options'=>['id'=>'','class'=>'']]) ?></div>
 	
 <div class='field-box'><?= $form->field($model, 'phone')->widget(\yii\widgets\MaskedInput::className(), [
-		'mask' => '+7(999)-999-9999',
+		//'mask' => '+7(999)-999-9999',
+	'mask' => "7(999)-999-9999",
 		'clientOptions'=>[
 		'removeMaskOnSubmit' => true,
 		]
