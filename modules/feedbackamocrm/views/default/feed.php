@@ -10,34 +10,30 @@ use yii\web\View;
 	'enableAjaxValidation' => true,
 	'validationUrl' => Url::toRoute('default/validate'),
 	]); ?>
-	
-	<div id="mess">
-	</div>
+<div class='form-box'>	
+	<div id="mess"></div>
 
-	<?= $form->field($model, 'name') ?>
-	<?= $form->field($model, 'phone')->widget(\yii\widgets\MaskedInput::className(), [
+<div class='field-box'><?= $form->field($model, 'name',[
+'options'=>['id'=>'','class'=>'']]) ?></div>
+	
+<div class='field-box'><?= $form->field($model, 'phone')->widget(\yii\widgets\MaskedInput::className(), [
 		'mask' => '+7(999)-999-9999',
 		'clientOptions'=>[
 		'removeMaskOnSubmit' => true,
 		]
-		]) ?>
+		]) ?></div>
 
-		<?= $form->field($model, 'theme') ?>
+<div class='field-box'><?= $form->field($model, 'theme') ?></div>
 
-		<?= $form->field($model, 'message')->textArea(['rows' => '6']) ?>
+<div class='field-box'><?= $form->field($model, 'message')->textArea(['rows' => '6']) ?></div>
 
 		<div class="form-group">
-			<?= Html::submitButton('Отправить', ['class' => 'btn btn-primary']) ?>
+			<?= Html::submitButton('Отправить', ['class' => 'sky big']) ?>
 		</div>
 
 		<?php ActiveForm::end(); ?>
-
-		<?php 
-
-
-
-
-		$this->registerJs('
+</div>
+		<?php $this->registerJs('
 			$(document).on("beforeSubmit", "#my-form-id", function () {
 
 				$.ajax({

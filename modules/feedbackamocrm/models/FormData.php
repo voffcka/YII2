@@ -189,5 +189,17 @@ class FormData extends Model
 
 }
 
+	public function attributeLabels()
+	{
+
+		return array(
+			'name' => 'Имя',
+			'phone' => 'Телефон',
+			'theme' => 'Тема сообщения',
+			'message' => 'Сообщение',
+			
+		);
+	}
+
 
 }

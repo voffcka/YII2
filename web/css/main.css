@@ -1,0 +1,107 @@
+.mywrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+.mywrap > .mycontainer {
+    padding: 70px 15px 20px;
+}
+.mycontainer {
+    width: 90%;
+} 
+@media all and (min-width: 1280px) and (max-width: 2560px) {
+
+  .form-box{
+    padding: 0 0 60px;
+    max-width: 50%;
+    margin:0 auto;
+} 
+
+
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+  .form-box{
+    padding: 0 0 60px;
+    max-width: 60%;
+    margin:0 auto;
+}
+
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+    .form-box{
+        padding: 0 0 60px;
+        max-width: 75%;
+        margin:0 auto;
+    }
+
+    
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+  .form-box{
+    padding: 0 0 60px;
+    max-width: 95%;
+    margin:0 auto;
+} 
+
+}
+
+@media all and (max-width: 480px) {
+  .form-box{
+    padding: 0 0 60px;
+    max-width: 100%;
+    margin:0 auto;
+}
+.mycontainer {
+    width: 460px;
+} 
+  
+}
+
+
+.field-box{
+    width: 100%;
+}
+.field-box  label{
+    float:left;
+    width: 30%;
+    height: 34px;
+    padding: 6px 0px;
+}
+.field-box input{
+    width: 70%;
+}
+.field-box textarea{
+    width: 70%;
+}
+button.big{font-size:1.3em;padding:10px 20px;}
+
+button.sky{
+    text-shadow:0 -1px 0 #1D6DC1;
+    color:#fff;
+    border:1px solid #1D6DC1;
+    background: rgb(122,188,255);
+    background: -moz-linear-gradient(top, rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(122,188,255,1)), color-stop(44%,rgba(96,171,248,1)), color-stop(100%,rgba(64,150,238,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Opera11.10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C */
+}
+
+button.sky:hover{
+    text-shadow:0 1px 0 #1D6DC1;
+    border:1px solid #1D6DC1;
+    background: rgb(155,205,255);
+    background: -moz-linear-gradient(top, rgba(155,205,255,1) 0%, rgba(134,192,250,1) 44%, rgba(110,176,242,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(155,205,255,1)), color-stop(44%,rgba(134,192,250,1)), color-stop(100%,rgba(110,176,242,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(155,205,255,1) 0%,rgba(134,192,250,1) 44%,rgba(110,176,242,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(155,205,255,1) 0%,rgba(134,192,250,1) 44%,rgba(110,176,242,1) 100%); /* Opera 11.10+ */
+    background: linear-gradient(top, rgba(155,205,255,1) 0%,rgba(134,192,250,1) 44%,rgba(110,176,242,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bcdff', endColorstr='#6eb0f2',GradientType=0 ); /* IE6-9 */
+}
