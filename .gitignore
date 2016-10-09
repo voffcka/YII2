@@ -1,2 +1,2 @@
-*.txt
-!.gitignore
+cookie.txt
+params.php
