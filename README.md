@@ -8,8 +8,7 @@ Yii 2 Basic Project Template
 FeedBack
 ------------
 Создан в виде модуля
-      modules/
-      --feedbackamocrm/
+      modules/feedbackamocrm/
 --      
       Конфигурационный файл
 --      
