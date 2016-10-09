@@ -49,7 +49,7 @@ use yii\web\View;
 			$("html, body").animate({ scrollTop: 0 }, "slow");
 		})
 		.fail(function(json) {
-			$("#mess").html(\'<div class="alert error">'.\Yii::$app->session->getFlash('danger').'</div>\');
+			$("#mess").html(\'<div class="alert error">'.\Yii::$app->session->getFlash('error').'</div>\');
 			$("html, body").animate({ scrollTop: 0 }, "slow");
 		});
 		return false; 
