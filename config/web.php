@@ -36,7 +36,7 @@ $config = [
 'rules' => [
 [
 'pattern' => '/',
-'route' => 'index/index',
+'route' => 'site/index',
 ],
 [
 'pattern' => 'confirm/<user_id:\d+>/<key>',
@@ -45,6 +45,10 @@ $config = [
 [
 'pattern' => '<controller>/<action>',
 'route' => '<controller>/<action>',
+],
+[
+'pattern' => 'feed/<controller>/<action>',
+'route' => 'feedbackamocrm/<controller>/<action>',
 ],
 ],
 ],
